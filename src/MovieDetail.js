@@ -38,7 +38,7 @@ class MoviesDetail extends Component {
 						/>
 					</Overdrive>
 					<div>
-						<h1>{movie.title}</h1>
+						<h2>{movie.title}</h2>
 						<h3>{movie.release_date}</h3>
 						<p>{movie.overview}</p>
 					</div>

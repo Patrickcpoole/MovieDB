@@ -9,12 +9,16 @@ import MoviesList from './MoviesList';
 import MovieDetail from './MovieDetail';
 
 const App = () => {
+	const style = {
+		textDecoration: 'none'
+	};
+
 	return (
 		<Router>
 			<div className='App'>
 				<header className='App-header'>
-					<Link to='/'>
-						<img src={logo} className='App-logo' alt='logo' />
+					<Link style={style} to='/'>
+						<h1>MovieDB</h1>
 					</Link>
 				</header>
 				<Switch>
