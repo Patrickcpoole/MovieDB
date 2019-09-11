@@ -55,6 +55,10 @@ const MovieWrapper = styled.div`
 	padding-top: 70vh;
 	background: url(${props => props.backdrop}) no-repeat;
 	background-size: cover;
+	@media (max-width: 600px) {
+		background-size: contain;
+		padding-top: 30vh;
+	}
 `;
 
 const MovieInfo = styled.div`
@@ -62,6 +66,9 @@ const MovieInfo = styled.div`
 	text-align: left;
 	padding: 2rem 10%;
 	display: flex;
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
 	> div {
 		margin-left: 20px;
 	}
